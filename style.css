@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+
+:root{
+    --cor-principal:#CCCCCC;
+    --cor-header:#034569;
+    --fonte-principal:'Poppins', sans-serif;
+    --branco: #ffffff;
+    --preto:#000000;
+    --verde:#78b537;
+    --verde-escuro:#2e6f30 ;
+    --cor-botao:#5c8d3a;
+    --cor-rodape:#676767;
+}
+
+
+/* Resetando Padding e Margin */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+/* BODY*/
+
+body{
+    background-color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+/* HEADER */
+.cabecalho__menu-hamburguer{
+    width: 24px;
+    height: 24px;
+    background-image:url("/assets/Hamburguinho.png");
+    background-repeat: no-repeat;
+    background-position:center;
+    padding: 1.5em;
+    display: inline-block;
+}
+
+.cabecalho{
+    background-color: var(--cor-header);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.container__imagem{
+    padding: 1em;
+}
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
+
+.lista-menu__item{
+    padding: 1em;
+    background-color: var(--cor-header);
+    text-decoration: none;
+}
+
+.lista-menu__link{
+    background:var(--branco);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+
+.container__botao{
+    display: none;
+}
+
+.container__nome{
+    align-items: center;
+    color: var(--branco);
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.5em;
+}
+
+/* CONTEUDO */
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.conteudo__imagem{
+    width: 100%;
+    height: auto;
+    margin-top: 1em;
+}
+
+.conteudo__texto{
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    margin: 1.5em 0.5em 1.5em 0.5em;
+}
+
+.conteudo__titulo{
+    margin: 1em 0 0 0;
+    font-family: var(--fonte-principal);
+    padding: 0.5em;
+    color: var(--verde);
+    
+}
+
+.conteudo__subtitulo{
+    margin: 1em 0 0 0;
+    font-family: var(--fonte-principal);
+    padding: 0.5em;
+    font-weight: 500;
+}
+
+.conteudo__lista{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.conteudo__texto__lista{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    margin: 2em;
+}
+
+
+/* FORMULARIO */
+
+.form{
+    margin: 2em;
+    padding: 1em;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin:auto;
+    margin-top: 1.5em;
+    padding: 1em;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-field label {
+    margin-bottom: 5px;
+}
+
+.form-field input,
+.form-field select {
+    padding: 5px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.text-container__texto{
+    font-size: 16px;
+    font-family: var(--fonte-principal);
+    padding: 1em;
+}
+
+.text-content__titulo{
+   font-size: 24px;
+   font-family: var(--fonte-principal);
+   color: var(--verde);
+   font-weight: 700;
+   margin-bottom: 1em;
+}
+
+.form__botao{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.botao__enviar{
+    padding: 1em 8em;
+    background-color: var(--cor-botao);
+    color: var(--branco);
+    border: none;
+    cursor: pointer;
+    font-family: var(--fonte-principal);
+    text-transform: uppercase;
+}
+
+.botao__enviar:hover{
+    color: var(--verde);
+}
+
+
+
+
+/* FOOTER */
+.rodape{
+    width: 100%;
+    min-height: 250px;
+    margin-top: 2em;
+    display: flex;
+    background-color: var(--cor-rodape);
+}
+
+.rodape__logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 2em 1em 2em 0.5em;
+    padding: 2em;
+}
+
+.rodape__conteudo{
+    width: 320px;
+    min-height: 150px;
+    padding: 10px;
+}
+
+.conteudo__texto{
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.conteudo_lista,.lista__itens{
+    margin:10px 0px;
+    list-style-type: none;
+}
+
+.lista__link{
+    color: var(--cor-principal);
+    font-family: var(--fonte-principal);
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.lista__link:hover{
+    color: var(--branco);
+}
+
+.opcoes__lista{
+    display: none;
+}
+
+/* HEADER RESPONSIVO */
+
+/* TELA 1024px */
+
+@media (min-width: 1024px){
+  .opcoes__lista{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+  }
+  .opcoes__item{
+    padding: 0.5em;
+    margin: 0.5em;
+    text-transform: uppercase;
+    list-style-type: none;
+  }
+  .opcoes__link{
+        text-decoration: none;
+        color: var(--branco);
+        font-size: 16px;
+
+  }
+  .cabecalho__menu-hamburguer{
+    display: none;
+  }
+
+  .container__nome{
+    font-size: 18px;
+  }
+  .opcoes__link:hover{
+    color: var(--verde);
+  }
+
+  .opcoes__link:active{
+    color: var(--verde-escuro);
+  }
+}
+
+/* TELA 1279px */
+
+@media (min-width: 1279px){
+    .opcoes__link{
+        margin-left: 1em;
+    }
+    
+
+}
+
+/* Imagem Responsiva Para Ipad */
+
+@media (min-width: 900px){
+    .conteudo__imagem{
+        height:60vh;
+        width: 95%;
+    }
+}
+
+
+/* FOOTER RESPONSIVO */
+
+/* Media 950px */
+
+@media(max-width: 790px){
+    .rodape{
+        flex-direction: column;
+        align-items: center;
+    }
+    .rodape__conteudo{
+        width: 100%;
+        text-align: center;
+    }
+
+    .lista__link:hover{
+        color: var(--branco);
+    }
+
+}
+
+/* FORMULARIO RESPONSIVO */
+
+@media screen and (min-width: 768px) {
+    .form-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .form-field {
+        flex-basis: 48%;
+    }
+
+    .text-container {
+        flex-basis: 100%;
+        margin-bottom: 0;
+    }
+
+    .submit-button {
+        flex-basis: 100%;
+        margin-top: 0;
+        justify-content: flex-end;
+    }
+}

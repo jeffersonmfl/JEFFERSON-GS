@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "f1ae82c1-8d83-4d47-9207-2c4165c21d7a", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "65c8ba31-33b4-46e2-8fba-eb5cc2533e29", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+    <title>Nourish SenseIA</title>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="container">
+            <input type="checkbox" id="menu" class="container__botao">
+            <label for="menu">
+                <span class="cabecalho__menu-hamburguer"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="index.html" class="lista-menu__link">Home</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="cultivo.html" class="lista-menu__link">Cultivo Sustentável</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="projeto.html" class="lista-menu__link">Projeto</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="agricultura.html" class="lista-menu__link">Agricultura Sustentável</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="iagenerativa.html" class="lista-menu__link">IA Generativa</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="contato.html" class="lista-menu__link">Contato</a>
+                </li>
+            </ul>
+            <img src="/assets/Logo.png" alt="Logo Green Valley" class="container__imagem ">
+            <p class="container__nome">Nourish SenseIA</p>
+        </div>
+        <div class="opcoes">
+            <ul class="opcoes__lista">
+                <li class="opcoes__item">
+                    <a href="index.html" class="opcoes__link">Home</a>
+                </li>
+                <li class="opcoes__item">
+                    <a href="agricultura.html" class="opcoes__link">Agricultura Sustentável</a>
+                </li>
+                <li class="opcoes__item">
+                    <a href="iagenerativa.html" class="opcoes__link">IA Generativa</a>
+                </li>
+                <li class="opcoes__item">
+                    <a href="cultivo.html" class="opcoes__link">Cultivo Sustentável</a>
+                </li>
+                <li class="opcoes__item">
+                    <a href="projeto.html" class="opcoes__link">Projeto</a>
+                </li>
+                <li class="opcoes__item">
+                    <a href="contato.html" class="opcoes__link">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section class="conteudo">
+        <h1 class="conteudo__titulo">IA Generativa</h1>
+        <p class="conteudo__texto">IA generativas, ou redes generativas adversariais (GANs, do inglês "Generative
+            Adversarial Networks"), são modelos de inteligência artificial que consistem em duas redes neurais: o
+            gerador e o discriminador. Essas redes são treinadas em conjunto e têm o objetivo de gerar e discriminar
+            dados, respectivamente.</p>
+        <p class="conteudo__texto"> O gerador é responsável por criar novos dados, como imagens, textos ou áudios, a
+            partir de amostras de treinamento. Ele gera amostras que são tão próximas quanto possível dos dados reais,
+            com o objetivo de enganar o discriminador.</p>
+        <p class="conteudo__texto">O discriminador, por sua vez, recebe tanto amostras geradas pelo gerador quanto
+            amostras reais e tenta distingui-las. Durante o treinamento, o gerador e o discriminador são ajustados
+            iterativamente para melhorar suas habilidades.</p>
+        <p class="conteudo__texto">O gerador busca gerar dados cada vez mais convincentes, enquanto o discriminador
+            procura melhorar sua capacidade de distinguir entre dados reais e gerados.</p>
+        <p class="conteudo__texto">Essa competição entre as duas redes leva a um refinamento contínuo, resultando em um
+            gerador capaz de criar dados cada vez mais realistas. As GANs têm sido aplicadas em diversas áreas, como
+            geração de imagens sintéticas, criação de música, síntese de voz, tradução de imagens, entre outros.</p>
+        <p class="conteudo__texto"> Essas redes generativas têm a capacidade de aprender a distribuição dos dados de
+            treinamento e, posteriormente, gerar novas amostras que compartilham características semelhantes aos dados
+            originais. No entanto, é importante destacar que as GANs são apenas uma das muitas abordagens dentro do
+            campo da inteligência artificial generativa.</p>
+        <p class="conteudo__texto">Outros métodos incluem modelos de linguagem generativa, modelos de mistura gaussiana,
+            modelos de Markov, entre outros. Cada abordagem tem suas vantagens e limitações, e a escolha depende do
+            contexto e dos objetivos específicos de aplicação.</p>
+        <img class="conteudo__imagem" src="/assets/Drone.png" alt="Homem sobrevoando plantação com o drone">
+
+
+    </section>
+    <section class="conteudo">
+        <h2 class="conteudo__subtitulo">IA generativa no campo</h2>
+        <p class="conteudo__texto"> O acesso a ferramentas de inteligência artificial na agricultura é responsável por melhorar os resultados da fazenda. Por meio do uso de veículos autônomos, drones, big data e softwares de gestão agrícola, o produtor consegue ter acesso a dados mais precisos sobre sua produção.</p>
+        <p class="conteudo__texto">Isso facilita o planejamento, a definição de estratégias e a tomada de decisões sobre a lavoura. Com isso, é possível reduzir custos, agilizar processos, reduzir infestações de plantas daninhas, pragas e doenças, além de aumentar a produtividade.</p>
+        <p class="conteudo__texto">Esses resultados podem ser alcançados em função do modo como a inteligência artificial é aplicada no campo. Com o apoio da agricultura de precisão e ferramentas de monitoramento da lavoura e do clima, é mais fácil obter diagnósticos, mapas e prescrições precisas sobre a fazenda.</p>
+        <p class="conteudo__texto">Embora ainda haja desafios para a implementação dessas tecnologias no campo, a tendência é que o uso de inteligência artificial se torne cada vez mais acessível para o produtor rural.</p>
+        <img class="conteudo__imagem" src="/assets/Drone2.png"
+            alt="Drone regando a plantação">
+    </section>
+    <footer class="rodape">
+        <div class="rodape__conteudo">
+            <div class="rodape__logo">
+                <img src="/assets/Logo.png" alt="Logo Green Valley">
+                <p>Nourish SenseIA</p>
+            </div>
+
+        </div>
+        <div class="rodape__conteudo">
+            <h3 class="conteudo__texto">Menu</h3>
+            <ul class="conteudo_lista">
+                <li class="lista__itens">
+                    <a href="index.html" class="lista__link">Home<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="agricultura.html" class="lista__link">Agricultura Sustentável<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="cultivo.html" class="lista__link">Cultivo Sustentável<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="iagenerativa.html" class="lista__link">IA Generativa<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="projeto.html" class="lista__link">Projeto<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="contato.html" class="lista__link">Contato<a>
+                </li>
+            </ul>
+        </div>
+        <div class="rodape__conteudo">
+            <h3 class="conteudo__texto">Membros</h3>
+            <ul class="conteudo_lista">
+                <li class="lista__itens">
+                    <a href="#" class="lista__link">Eduardo Bezzera<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="#" class="lista__link">Jeffeson Mendes<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="#" class="lista__link">João Vitor Benjamin<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="#" class="lista__link">Silas Henrique da Silva<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="#" class="lista__link">Victor Manssur<a>
+                </li>
+            </ul>
+        </div>
+        <div class="rodape__conteudo">
+            <h3 class="conteudo__texto">RM</h3>
+            <ul class="conteudo_lista">
+                <li class="lista__itens">
+                    <a href="#" class="lista__link">RM:98890<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="#" class="lista__link">RM:552052<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="#" class="lista__link">RM:98938<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="#" class="lista__link">RM:98965<a>
+                </li>
+                <li class="lista__itens">
+                    <a href="#" class="lista__link">RM:98930<a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
